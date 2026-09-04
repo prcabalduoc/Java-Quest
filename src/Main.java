@@ -16,11 +16,11 @@ public class Main {
 
         Estudiante estudiante = new Estudiante(nombre, carrera, edad);
 
-        /*Estudiante estudiante = new Estudiante(
-                "Ana",
-                "Ingeniería en Informática",
-                20
-        );*/
+        if (edad >= 18) {
+            System.out.println("Acceso autorizado.");
+        } else {
+            System.out.println("Acceso restringido.");
+        }
 
         estudiante.mostrarInformacion();
     }
