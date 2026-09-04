@@ -1,14 +1,18 @@
 public class Estudiante {
+
+    //VARIABLES
     private String nombre;
     private String carrera;
     private int edad;
 
+    //CONSTRUCTOR
     public Estudiante(String nombre, String carrera, int edad) {
         this.nombre = nombre;
         this.carrera = carrera;
         this.edad = edad;
     }
 
+    //GETTER SETTER
     public String getNombre() {
         return nombre;
     }
@@ -33,6 +37,7 @@ public class Estudiante {
         this.edad = edad;
     }
 
+    //METODO CUSTOMIZADO
     public void mostrarInformacion() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Carrera: " + carrera);

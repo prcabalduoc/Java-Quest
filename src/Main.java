@@ -1,12 +1,15 @@
 import java.util.Scanner;
 
+//CLASE PRINCIPAL
 public class Main {
     public static void main(String[] args) {
 
+        //BUCLE FOR
         for (int i = 1; i <= 5; i++) {
             System.out.println("Procesando estudiante " + i);
         }
 
+        //SCANNER
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese nombre: ");
@@ -18,6 +21,7 @@ public class Main {
         System.out.print("Ingrese edad: ");
         int edad = scanner.nextInt();
 
+        //WHILE
         int opcion = -1;
 
         while (opcion != 0) {
@@ -39,8 +43,10 @@ public class Main {
             }
         }
 
+        //INSTANCIA OBJETO
         Estudiante estudiante = new Estudiante(nombre, carrera, edad);
 
+        //IF - ELSE IF - ELSE
         if (edad < 18) {
             System.out.println("Estudiante menor de edad.");
         } else if (edad < 25) {
